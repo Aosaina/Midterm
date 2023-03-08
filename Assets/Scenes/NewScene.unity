@@ -597,6 +597,7 @@ GameObject:
   m_Component:
   - component: {fileID: 550268873}
   - component: {fileID: 550268872}
+  - component: {fileID: 550268874}
   m_Layer: 0
   m_Name: poop
   m_TagString: trash
@@ -669,6 +670,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &550268874
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550268871}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9501243, y: 1.12, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &601864984
 GameObject:
   m_ObjectHideFlags: 0
@@ -897,6 +911,7 @@ GameObject:
   m_Component:
   - component: {fileID: 626568528}
   - component: {fileID: 626568527}
+  - component: {fileID: 626568529}
   m_Layer: 0
   m_Name: glass2
   m_TagString: trash
@@ -969,6 +984,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &626568529
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626568526}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.35004583, y: 0.36999997, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &897743480
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,6 +1125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 935751207}
   - component: {fileID: 935751206}
+  - component: {fileID: 935751208}
   m_Layer: 0
   m_Name: battery
   m_TagString: trash
@@ -1169,6 +1198,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &935751208
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935751205}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1401492, y: 0.72999996, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1074406503
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,6 +1221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1074406505}
   - component: {fileID: 1074406504}
+  - component: {fileID: 1074406506}
   m_Layer: 0
   m_Name: toothpate
   m_TagString: trash
@@ -1251,6 +1294,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1074406506
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074406503}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7901035, y: 0.58, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1084456208
 GameObject:
   m_ObjectHideFlags: 0
@@ -2151,6 +2207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1869860803}
   - component: {fileID: 1869860802}
+  - component: {fileID: 1869860804}
   m_Layer: 0
   m_Name: glass1
   m_TagString: trash
@@ -2223,6 +2280,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1869860804
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869860801}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.44005764, y: 0.35999998, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1967934885
 GameObject:
   m_ObjectHideFlags: 0
@@ -2233,6 +2303,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1967934887}
   - component: {fileID: 1967934886}
+  - component: {fileID: 1967934888}
   m_Layer: 0
   m_Name: nail
   m_TagString: trash
@@ -2305,3 +2376,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1967934888
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967934885}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6100799, y: 0.69, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
