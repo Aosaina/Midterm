@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -8,7 +9,9 @@ public class PlayerMove : MonoBehaviour
 
     bool havetrash = false;
     bool texton = false;
+    bool secondLevel = false;
     int trashnum = 0;
+
 
     public GameObject npcText1;
     public GameObject npcText2;
@@ -48,6 +51,12 @@ public class PlayerMove : MonoBehaviour
 
         }
         transform.position = newPos;
+
+        if (secondLevel && Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("next!");
+            SceneManager.LoadScene(1);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -73,6 +82,7 @@ public class PlayerMove : MonoBehaviour
         if(trashnum == 3)
         {
             havetrash = true;
+            secondLevel = true;
         }
 
         if (havetrash && other.gameObject.name == "npc")
@@ -86,8 +96,9 @@ public class PlayerMove : MonoBehaviour
             npcText1.SetActive(false);
 
         }
-       
-       
+
+
+
     }
     void OnTriggerExit2D(Collider2D other)
     {
@@ -97,5 +108,6 @@ public class PlayerMove : MonoBehaviour
             npcText2.SetActive(false);
         }
     }
+
 
 }
