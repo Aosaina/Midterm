@@ -11,6 +11,7 @@ public class PlayerMove : MonoBehaviour
     bool texton = false;
     bool secondLevel = false;
     int trashnum = 0;
+    int trashNumTwo = 0;
 
 
     public GameObject npcText1;
