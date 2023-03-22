@@ -5,8 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class SecondLevel : MonoBehaviour
 {
-    int trashNum = 0;
-    bool cleaning = true;
+    int trashNum = 3;
+    bool cleaning = false;
+
+    public AudioSource mySource;
+    public AudioClip trashSound;
+    public AudioClip npcSound;
+    public AudioClip cleanSound;
+
+
+    public GameObject npcWarn;
 
     // Start is called before the first frame update
     void Start()
@@ -20,10 +28,12 @@ public class SecondLevel : MonoBehaviour
 
     }
 
+  
     void OnTriggerEnter2D(Collider2D other)
     {
         if (cleaning && other.gameObject.CompareTag("trash"))
         {
+            mySource.PlayOneShot(trashSound);
             Destroy(other.gameObject);
             trashNum++;
             Debug.Log("you hit me!");
@@ -33,13 +43,33 @@ public class SecondLevel : MonoBehaviour
         {
             cleaning = false;
         }
+
+        if(other.gameObject.name == "greyS")
+        {
+            mySource.PlayOneShot(npcSound);
+            npcWarn.SetActive(true);
+        }
+
     }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.name == "greyS")
+        {
+            npcWarn.SetActive(false);
+        }
+
+
+    }
+
+
 
     private void OnTriggerStay2D(Collider2D other)
     {
 
         if (other.gameObject.name == "cleanSpot" && Input.GetKeyDown(KeyCode.Space))
         {
+            mySource.PlayOneShot(cleanSound);
             trashNum = 0;
             cleaning = true;
         }

@@ -17,6 +17,11 @@ public class PlayerMove : MonoBehaviour
     public GameObject npcText1;
     public GameObject npcText2;
 
+    public AudioSource mySource;
+    public AudioClip trashSound;
+    public AudioClip npcSound;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -64,18 +69,21 @@ public class PlayerMove : MonoBehaviour
     {
         if (other.gameObject.name == "trash1")
         {
+            mySource.PlayOneShot(trashSound);
             Destroy(other.gameObject);
             trashnum++;
         }
 
        if (other.gameObject.name == "trash2")
         {
+            mySource.PlayOneShot(trashSound);
             Destroy(other.gameObject);
             trashnum++;
         }
 
         if (other.gameObject.name == "trash3")
         {
+            mySource.PlayOneShot(trashSound);
             Destroy(other.gameObject);
             trashnum++;
         }
@@ -88,11 +96,13 @@ public class PlayerMove : MonoBehaviour
 
         if (havetrash && other.gameObject.name == "npc")
         {
+            mySource.PlayOneShot(npcSound);
             npcText1.SetActive(true);
             npcText2.SetActive(false);
         }
         else if (!havetrash && other.gameObject.name == "npc")
         {
+            mySource.PlayOneShot(npcSound);
             npcText2.SetActive(true);
             npcText1.SetActive(false);
 
