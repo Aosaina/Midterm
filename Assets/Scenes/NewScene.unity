@@ -248,6 +248,7 @@ GameObject:
   - component: {fileID: 142326174}
   - component: {fileID: 142326175}
   - component: {fileID: 142326176}
+  - component: {fileID: 142326177}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -586,6 +587,19 @@ TrailRenderer:
   m_MinVertexDistance: 1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &142326177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142326168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 701645fe9159d4996bf0f2c910401079, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walksound: {fileID: 142326175}
 --- !u!1 &155914797
 GameObject:
   m_ObjectHideFlags: 0
@@ -6568,7 +6582,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.2896502, y: -0.24436378}
+  m_Offset: {x: -0.23691142, y: -0.52747476}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6579,7 +6593,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.5294104, y: 1.8845694}
+  m_Size: {x: 4.0568, y: 2.4507914}
   m_EdgeRadius: 0
 --- !u!212 &746245553
 SpriteRenderer:
